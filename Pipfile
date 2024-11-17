@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-environ = "*"
+django-phonenumber-field = "*"
+django-author = "*"
+django-extensions = "*"
+django-countries = "*"
+phonenumbers = "*"
+django-auditlog = "*"
+django-debug-toolbar = "*"
+django-browser-reload = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+crispy-bootstrap5 = "*"
+
+[dev-packages]
+django-pytest = "*"
+ruff = "*"
+ipython = "*"
+django-debug-toolbar = "*"
+django-browser-reload = "*"
+
+
+[requires]
+python_version = "3.12"
