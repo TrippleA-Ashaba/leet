@@ -41,14 +41,13 @@ class Question(TimeStampedModel):
     @classmethod
     def get_practice_questions(cls, question_count=5):
         one_week_ago = timezone.now() - timedelta(days=7)
-        average_practice_count = Question.objects.aggregate(
-            models.Avg("practice_count")
-        )["practice_count__avg"]
+        average_practice_count = Question.objects.aggregate(models.Avg("practice_count"))["practice_count__avg"]
         questions = Question.objects.filter(
             Q(last_practiced__lt=one_week_ago)
             | Q(last_practiced__isnull=True)
             | Q(practice_count__lte=average_practice_count)
         )
+        return questions
 
     def save(self, *args, **kwargs):
         self.text = self.text.lower()
@@ -56,7 +55,7 @@ class Question(TimeStampedModel):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.grind_num} - {self.text}"
+        return f"{self.number} - {self.text}"
 
 
 @with_author
