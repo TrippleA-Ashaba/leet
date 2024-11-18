@@ -20,6 +20,7 @@ crispy-bootstrap5 = "*"
 django-model-utils = "*"
 smartmin = "*"
 django-taggit = "*"
+django-dynamic-fixture = "*"
 
 [dev-packages]
 ruff = "*"
