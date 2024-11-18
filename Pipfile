@@ -17,6 +17,9 @@ django-browser-reload = "*"
 django-allauth = "*"
 django-crispy-forms = "*"
 crispy-bootstrap5 = "*"
+django-model-utils = "*"
+smartmin = "*"
+django-taggit = "*"
 
 [dev-packages]
 django-pytest = "*"
@@ -24,7 +27,6 @@ ruff = "*"
 ipython = "*"
 django-debug-toolbar = "*"
 django-browser-reload = "*"
-
 
 [requires]
 python_version = "3.12"

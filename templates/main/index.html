@@ -1,6 +1,69 @@
 {% extends 'layouts/base.html' %}
 <!--  -->
+{% load crispy_forms_tags %}
+<!--  -->
+{% block title %}LeetCode Practice{% endblock %}
+<!--  -->
+<!--  -->
 {% block content %}
-<h1>Home</h1>
-<p>Welcome to the home page</p>
+<h1>LeetCode Practice questions.</h1>
+<p>
+	These are questions I have answered and this website is for shuffling them and choosing randomly which questions to
+	practice on the weekends
+</p>
+<p>
+	Source of questions:
+	<a href="https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=26" target="_blank">Grind75</a>
+</p>
+<hr />
+<div class="">
+	<h3>Questions:</h3>
+</div>
+<ul>
+	{% for question in questions %}
+	<li>
+		<a class="me-3" href="{{ question.url }}" target="_blank">
+			{% if question.grind_num %}
+			<!--  -->
+			{{ question.grind_num }}
+			<!--  -->
+			{% else %}
+			<!--  -->
+			{{ forloop.counter }}
+			<!--  -->
+			{% endif %} - {{ question.text|title }}</a
+		>
+		{% if question.topics.all %}
+		<!--  -->
+
+		{% for topic in question.topics.all %}
+		<span class="badge text-bg-secondary rounded-pill">{{ topic.name }} </span>
+		{% endfor %}
+		<!--  -->
+		{% endif %}
+	</li>
+	{% empty %}
+	<li>No questions found</li>
+	{% endfor %}
+</ul>
+<div class="mt-5">
+	<div class="">
+		<h3>Practice qtns:</h3>
+	</div>
+	<ul>
+		<li>
+			<a class="me-3" href="{{ practice_questions.url }}" target="_blank">
+				{{ practice_questions.grind_num }} - {{ practice_questions.text|title }}</a
+			>
+			{% if practice_questions.topics.all %}
+			<!--  -->
+
+			{% for topic in practice_questions.topics.all %}
+			<span class="badge text-bg-secondary rounded-pill">{{ topic.name }} </span>
+			{% endfor %}
+			<!--  -->
+			{% endif %}
+		</li>
+	</ul>
+</div>
 {% endblock %}
