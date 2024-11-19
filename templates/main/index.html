@@ -19,7 +19,7 @@
 <div class="">
 	<h3 class="mb-3 fs-5">All Questions:</h3>
 </div>
-<div class="mb-3">
+<div class="mb-3 container">
 	{% for question in questions %}
 	<div class="card bg-secondary bg-opacity-10">
 		<div class="card-body">
@@ -60,7 +60,7 @@
 	<div class="">
 		<h3 class="fs-5 mb-3">Practice qtns:</h3>
 	</div>
-	<ul>
+	<div class="container">
 		{% for question in practice_questions %}
 		<div class="card bg-secondary bg-opacity-10">
 			<div class="card-body">
@@ -96,6 +96,6 @@
 		{% empty %}
 		<li>No questions found</li>
 		{% endfor %}
-	</ul>
+	</div>
 </div>
 {% endblock %}
