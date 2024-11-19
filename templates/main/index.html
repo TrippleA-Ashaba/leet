@@ -1,6 +1,101 @@
 {% extends 'layouts/base.html' %}
 <!--  -->
+{% load crispy_forms_tags %}
+<!--  -->
+{% block title %}LeetCode Practice{% endblock %}
+<!--  -->
+<!--  -->
 {% block content %}
-<h1>Home</h1>
-<p>Welcome to the home page</p>
+<h1 class="fs-3 my-3">LeetCode Practice questions.</h1>
+<p>
+	These are questions I have answered and this website is for shuffling them and choosing randomly which questions to
+	practice on the weekends
+</p>
+<p>
+	Source of questions:
+	<a href="https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=26" target="_blank">Grind75</a>
+</p>
+<hr />
+<div class="">
+	<h3 class="mb-3 fs-5">All Questions:</h3>
+</div>
+<div class="mb-3 container">
+	{% for question in questions %}
+	<div class="card bg-secondary bg-opacity-10">
+		<div class="card-body">
+			<div class="row">
+				<div class="col-3 col-md-2 col-lg-1 text-center fw-bold fs-3">{{ question.number }}</div>
+				<div class="col">
+					<div class="mb-1">
+						<a
+							class="text-warning-emphasis me-3 fw-bold link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+							href="{{ question.url }}"
+							target="_blank">
+							{{ question.text|title }}</a
+						>
+					</div>
+					<div class="d-flex align-items-center gap-2">
+						<div
+							class="me-5 fw-semibold {% if question.difficulty == 'easy' %}text-success{% elif question.difficulty == 'medium' %}text-warning{% elif question.difficulty == 'hard' %}text-danger{% endif %}">
+							{{ question.difficulty|title }}
+						</div>
+						{% if question.topics.all %}
+						<!--  -->
+
+						{% for topic in question.topics.all %}
+						<div class="badge text-white bg-secondary bg-opacity-50 rounded-pill">{{ topic.name }}</div>
+						{% endfor %}
+						<!--  -->
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% empty %}
+	<li>No questions found</li>
+	{% endfor %}
+</div>
+<div class="mt-5">
+	<div class="">
+		<h3 class="fs-5 mb-3">Practice qtns:</h3>
+	</div>
+	<div class="container">
+		{% for question in practice_questions %}
+		<div class="card bg-secondary bg-opacity-10">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-3 col-md-2 col-lg-1 text-center fw-bold fs-3">{{ question.number }}</div>
+					<div class="col">
+						<div class="mb-1">
+							<a
+								class="text-warning-emphasis me-3 fw-bold link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+								href="{{ question.url }}"
+								target="_blank">
+								{{ question.text|title }}</a
+							>
+						</div>
+						<div class="d-flex align-items-center gap-2">
+							<div
+								class="me-5 fw-semibold {% if question.difficulty == 'easy' %}text-success{% elif question.difficulty == 'medium' %}text-warning{% elif question.difficulty == 'hard' %}text-danger{% endif %}">
+								{{ question.difficulty|title }}
+							</div>
+							{% if question.topics.all %}
+							<!--  -->
+
+							{% for topic in question.topics.all %}
+							<div class="badge text-white bg-secondary bg-opacity-50 rounded-pill">{{ topic.name }}</div>
+							{% endfor %}
+							<!--  -->
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% empty %}
+		<li>No questions found</li>
+		{% endfor %}
+	</div>
+</div>
 {% endblock %}

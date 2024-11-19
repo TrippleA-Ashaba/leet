@@ -24,7 +24,7 @@ from django.urls import include, path
 urlpatterns = (
     [
         path("admin/", admin.site.urls),
-        path("", include("apps.users.urls", namespace="users")),
+        # path("", include("apps.users.urls", namespace="users")),
         path("", include("apps.main.urls", namespace="main")),
         path("__reload__/", include("django_browser_reload.urls")),
     ]

@@ -17,14 +17,21 @@ django-browser-reload = "*"
 django-allauth = "*"
 django-crispy-forms = "*"
 crispy-bootstrap5 = "*"
+django-model-utils = "*"
+smartmin = "*"
+django-taggit = "*"
+django-dynamic-fixture = "*"
+time-machine = "*"
+python-dateutil = "*"
 
 [dev-packages]
-django-pytest = "*"
 ruff = "*"
 ipython = "*"
 django-debug-toolbar = "*"
 django-browser-reload = "*"
-
+pytest-django = "*"
+pytest-xdist = "*"
+pytest-sugar = "*"
 
 [requires]
 python_version = "3.12"

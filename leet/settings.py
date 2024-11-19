@@ -46,8 +46,11 @@ INSTALLED_APPS = [
     "django_browser_reload",
     "crispy_forms",
     "crispy_bootstrap5",
+    "smartmin",
+    "taggit",
     # Local apps
     "apps.users",
+    "apps.main",
 ]
 
 MIDDLEWARE = [
@@ -149,3 +152,24 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+# ====================================== SMARTMIN =======================================
+PERMISSIONS = {
+    "*": (
+        "create",  # can create an object
+        "read",  # can read an object, viewing it's details
+        "update",  # can update an object
+        "delete",  # can delete an object,
+        "list",
+    ),  # can view a list of the objects
+}
+
+# assigns the permissions that each group should have, here creating an Administrator group with
+# authority to create and change users
+GROUP_PERMISSIONS = {
+    "Administrator": ("auth.user.*",),
+    "SystemAdmin": ("main.question.*",),
+}
+
+# ====================================== TAGGIT =======================================
+TAGGIT_CASE_INSENSITIVE = True
