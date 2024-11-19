@@ -39,9 +39,13 @@ class Question(TimeStampedModel):
     @classmethod
     def get_practice_questions(cls, question_count=5):
         one_week_ago = timezone.now() - relativedelta(weeks=1)
-        questions = Question.objects.filter(
-            Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
-        ).order_by("last_practiced", "practice_count")
+        questions = (
+            Question.objects.filter(
+                Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
+            )
+            .order_by("last_practiced", "practice_count")
+            .prefetch_related("topics")
+        )
 
         return questions[:question_count]
 
