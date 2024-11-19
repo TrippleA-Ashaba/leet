@@ -1,6 +1,5 @@
-from datetime import timedelta
-
 from author.decorators import with_author
+from dateutil.relativedelta import relativedelta
 from django.db import models
 from django.db.models import Q
 from django.utils import timezone
@@ -29,9 +28,8 @@ class Question(TimeStampedModel):
     )
     number = models.PositiveIntegerField(
         verbose_name="leetcode number",
-        null=True,
-        blank=True,
         help_text="Leetcode problem number",
+        unique=True,
     )
     url = models.URLField(null=True, blank=True)
     topics = TaggableManager()
@@ -40,14 +38,12 @@ class Question(TimeStampedModel):
 
     @classmethod
     def get_practice_questions(cls, question_count=5):
-        one_week_ago = timezone.now() - timedelta(days=7)
-        average_practice_count = Question.objects.aggregate(models.Avg("practice_count"))["practice_count__avg"]
+        one_week_ago = timezone.now() - relativedelta(weeks=1)
         questions = Question.objects.filter(
-            Q(last_practiced__lt=one_week_ago)
-            | Q(last_practiced__isnull=True)
-            | Q(practice_count__lte=average_practice_count)
-        )
-        return questions
+            Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
+        ).order_by("last_practiced", "practice_count")
+
+        return questions[:question_count]
 
     def save(self, *args, **kwargs):
         self.text = self.text.lower()

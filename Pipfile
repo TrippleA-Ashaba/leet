@@ -21,6 +21,8 @@ django-model-utils = "*"
 smartmin = "*"
 django-taggit = "*"
 django-dynamic-fixture = "*"
+time-machine = "*"
+python-dateutil = "*"
 
 [dev-packages]
 ruff = "*"
