@@ -23,6 +23,7 @@ django-taggit = "*"
 django-dynamic-fixture = "*"
 time-machine = "*"
 python-dateutil = "*"
+whitenoise = "*"
 
 [dev-packages]
 ruff = "*"
