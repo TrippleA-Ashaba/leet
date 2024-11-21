@@ -25,11 +25,18 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*   
 
+# Install pipenv
+RUN pip install --no-cache-dir pipenv
+
 # Copy files into the working directory
 COPY . /app/
 
-# Install dependencies listed in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# Tell pipenv to create a virtual environment
+ENV PIPENV_VENV_IN_PROJECT=1
+ENV PIPENV_SYSTEM=1
+
+# Install dependencies
+RUN pipenv install --deploy --ignore-pipfile
 
 # Expose the port the app runs on
 EXPOSE 8000
