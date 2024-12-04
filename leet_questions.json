@@ -222,5 +222,523 @@
 		"url": "https://leetcode.com/problems/palindrome-linked-list/",
 		"difficulty": "easy",
 		"topics": ["linked list", "two pointers"]
+	},
+	{
+		"text": "Move Zeroes",
+		"number": 283,
+		"url": "https://leetcode.com/problems/move-zeroes/",
+		"difficulty": "easy",
+		"topics": ["array", "two pointers"]
+	},
+	{
+		"text": "Symmetric Tree",
+		"number": 101,
+		"url": "https://leetcode.com/problems/symmetric-tree/",
+		"difficulty": "easy",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Missing Number",
+		"number": 268,
+		"url": "https://leetcode.com/problems/missing-number/",
+		"difficulty": "easy",
+		"topics": ["array", "math", "bit manipulation"]
+	},
+	{
+		"text": "Palindrome Number",
+		"number": 9,
+		"url": "https://leetcode.com/problems/palindrome-number/",
+		"difficulty": "easy",
+		"topics": ["math"]
+	},
+	{
+		"text": "Convert Sorted Array to Binary Search Tree",
+		"number": 108,
+		"url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+		"difficulty": "easy",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Reverse Bits",
+		"number": 190,
+		"url": "https://leetcode.com/problems/reverse-bits/",
+		"difficulty": "easy",
+		"topics": ["bit manipulation"]
+	},
+	{
+		"text": "Subtree of Another Tree",
+		"number": 572,
+		"url": "https://leetcode.com/problems/subtree-of-another-tree/",
+		"difficulty": "easy",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Squares of a Sorted Array",
+		"number": 977,
+		"url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+		"difficulty": "easy",
+		"topics": ["array", "two pointers"]
+	},
+	{
+		"text": "Maximum Subarray",
+		"number": 53,
+		"url": "https://leetcode.com/problems/maximum-subarray/",
+		"difficulty": "medium",
+		"topics": ["array", "divide and conquer", "dynamic programming"]
+	},
+	{
+		"text": "Insert Interval",
+		"number": 57,
+		"url": "https://leetcode.com/problems/insert-interval/",
+		"difficulty": "medium",
+		"topics": ["array", "sort"]
+	},
+	{
+		"text": "01 Matrix",
+		"number": 542,
+		"url": "https://leetcode.com/problems/01-matrix/",
+		"difficulty": "medium",
+		"topics": ["array", "bfs", "dynamic programming"]
+	},
+	{
+		"text": "K Closest Points to Origin",
+		"number": 973,
+		"url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+		"difficulty": "medium",
+		"topics": ["array", "divide and conquer", "sort"]
+	},
+	{
+		"text": "Longest Substring Without Repeating Characters",
+		"number": 3,
+		"url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+		"difficulty": "medium",
+		"topics": ["hash table", "two pointers", "string"]
+	},
+	{
+		"text": "3Sum",
+		"number": 15,
+		"url": "https://leetcode.com/problems/3sum/",
+		"difficulty": "medium",
+		"topics": ["array", "two pointers"]
+	},
+	{
+		"text": "Binary Tree Level Order Traversal",
+		"number": 102,
+		"url": "https://leetcode.com/problems/binary-tree-level-order-traversal/description/",
+		"difficulty": "medium",
+		"topics": ["tree", "Breadth-First Search", "Binary Tree"]
+	},
+	{
+		"text": "Clone Graph",
+		"number": 133,
+		"url": "https://leetcode.com/problems/clone-graph/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search", "graph"]
+	},
+	{
+		"text": "Evaluate Reverse Polish Notation",
+		"number": 150,
+		"url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+		"difficulty": "medium",
+		"topics": ["stack", "math"]
+	},
+	{
+		"text": "Course Schedule",
+		"number": 207,
+		"url": "https://leetcode.com/problems/course-schedule/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search", "graph", "topological sort"]
+	},
+	{
+		"text": "Implement Trie (Prefix Tree)",
+		"number": 208,
+		"url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+		"difficulty": "medium",
+		"topics": ["design", "trie"]
+	},
+	{
+		"text": "Coin Change",
+		"number": 322,
+		"url": "https://leetcode.com/problems/coin-change/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "Product of Array Except Self",
+		"number": 238,
+		"url": "https://leetcode.com/problems/product-of-array-except-self/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Min Stack",
+		"number": 155,
+		"url": "https://leetcode.com/problems/min-stack/",
+		"difficulty": "medium",
+		"topics": ["stack", "design"]
+	},
+	{
+		"text": "Validate Binary Search Tree",
+		"number": 98,
+		"url": "https://leetcode.com/problems/validate-binary-search-tree/",
+		"difficulty": "medium",
+		"topics": ["tree", "depth-first search"]
+	},
+	{
+		"text": "Number of Islands",
+		"number": 200,
+		"url": "https://leetcode.com/problems/number-of-islands/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search", "union find", "graph"]
+	},
+	{
+		"text": "Rotting Oranges",
+		"number": 994,
+		"url": "https://leetcode.com/problems/rotting-oranges/",
+		"difficulty": "medium",
+		"topics": ["breadth-first search"]
+	},
+	{
+		"text": "Search in Rotated Sorted Array",
+		"number": 33,
+		"url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+		"difficulty": "medium",
+		"topics": ["array", "binary search"]
+	},
+	{
+		"text": "Combination Sum",
+		"number": 39,
+		"url": "https://leetcode.com/problems/combination-sum/",
+		"difficulty": "medium",
+		"topics": ["array", "backtracking"]
+	},
+	{
+		"text": "Permutations",
+		"number": 46,
+		"url": "https://leetcode.com/problems/permutations/",
+		"difficulty": "medium",
+		"topics": ["backtracking"]
+	},
+	{
+		"text": "Merge Intervals",
+		"number": 56,
+		"url": "https://leetcode.com/problems/merge-intervals/",
+		"difficulty": "medium",
+		"topics": ["array", "sort"]
+	},
+	{
+		"text": "Lowest Common Ancestor of a Binary Tree",
+		"number": 236,
+		"url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+		"difficulty": "medium",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Time Based Key-Value Store",
+		"number": 981,
+		"url": "https://leetcode.com/problems/time-based-key-value-store/",
+		"difficulty": "medium",
+		"topics": ["hash table", "binary search", "design"]
+	},
+	{
+		"text": "Accounts Merge",
+		"number": 721,
+		"url": "https://leetcode.com/problems/accounts-merge/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "union find"]
+	},
+	{
+		"text": "Sort Colors",
+		"number": 75,
+		"url": "https://leetcode.com/problems/sort-colors/",
+		"difficulty": "medium",
+		"topics": ["array", "two pointers", "sort"]
+	},
+	{
+		"text": "Word Break",
+		"number": 139,
+		"url": "https://leetcode.com/problems/word-break/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "Partition Equal Subset Sum",
+		"number": 416,
+		"url": "https://leetcode.com/problems/partition-equal-subset-sum/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "String to Integer (atoi)",
+		"number": 8,
+		"url": "https://leetcode.com/problems/string-to-integer-atoi/",
+		"difficulty": "medium",
+		"topics": ["math", "string"]
+	},
+	{
+		"text": "Spiral Matrix",
+		"number": 54,
+		"url": "https://leetcode.com/problems/spiral-matrix/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Subsets",
+		"number": 78,
+		"url": "https://leetcode.com/problems/subsets/",
+		"difficulty": "medium",
+		"topics": ["array", "backtracking"]
+	},
+	{
+		"text": "Binary Tree Right Side View",
+		"number": 199,
+		"url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+		"difficulty": "medium",
+		"topics": ["tree", "breadth-first search"]
+	},
+	{
+		"text": "Longest Palindrome Substring",
+		"number": 5,
+		"url": "https://leetcode.com/problems/longest-palindromic-substring/",
+		"difficulty": "medium",
+		"topics": ["string", "dynamic programming"]
+	},
+	{
+		"text": "Unique Paths",
+		"number": 62,
+		"url": "https://leetcode.com/problems/unique-paths/",
+		"difficulty": "medium",
+		"topics": ["array", "dynamic programming"]
+	},
+	{
+		"text": "Construct Binary Tree from Preorder and Inorder Traversal",
+		"number": 105,
+		"url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+		"difficulty": "medium",
+		"topics": ["array", "tree", "depth-first search"]
+	},
+	{
+		"text": "Container with Most Water",
+		"number": 11,
+		"url": "https://leetcode.com/problems/container-with-most-water/",
+		"difficulty": "medium",
+		"topics": ["array", "two pointers"]
+	},
+	{
+		"text": "Letter Combinations of a Phone Number",
+		"number": 17,
+		"url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+		"difficulty": "medium",
+		"topics": ["string", "backtracking"]
+	},
+	{
+		"text": "Word Search",
+		"number": 79,
+		"url": "https://leetcode.com/problems/word-search/",
+		"difficulty": "medium",
+		"topics": ["array", "backtracking"]
+	},
+	{
+		"text": "Find all Anagrams in a String",
+		"number": 438,
+		"url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+		"difficulty": "medium",
+		"topics": ["hash table", "string"]
+	},
+	{
+		"text": "minimum Height Trees",
+		"number": 310,
+		"url": "https://leetcode.com/problems/minimum-height-trees/",
+		"difficulty": "medium",
+		"topics": ["graph"]
+	},
+	{
+		"text": "Task Scheduler",
+		"number": 621,
+		"url": "https://leetcode.com/problems/task-scheduler/",
+		"difficulty": "medium",
+		"topics": ["array", "greedy", "queue"]
+	},
+	{
+		"text": "LRU Cache",
+		"number": 146,
+		"url": "https://leetcode.com/problems/lru-cache/",
+		"difficulty": "medium",
+		"topics": ["design", "hash table", "linked list"]
+	},
+	{
+		"text": "Kth Smallest Element in a BST",
+		"number": 230,
+		"url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+		"difficulty": "medium",
+		"topics": ["binary search", "tree"]
+	},
+	{
+		"text": "Daily Temperatures",
+		"number": 739,
+		"url": "https://leetcode.com/problems/daily-temperatures/",
+		"difficulty": "medium",
+		"topics": ["array", "stack"]
+	},
+	{
+		"text": "House Robber",
+		"number": 198,
+		"url": "https://leetcode.com/problems/house-robber/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "Gas Station",
+		"number": 134,
+		"url": "https://leetcode.com/problems/gas-station/",
+		"difficulty": "medium",
+		"topics": ["greedy"]
+	},
+	{
+		"text": "Next Permutation",
+		"number": 31,
+		"url": "https://leetcode.com/problems/next-permutation/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Valid Sudoku",
+		"number": 36,
+		"url": "https://leetcode.com/problems/valid-sudoku/",
+		"difficulty": "medium",
+		"topics": ["hash table"]
+	},
+	{
+		"text": "Group Anagrams",
+		"number": 49,
+		"url": "https://leetcode.com/problems/group-anagrams/",
+		"difficulty": "medium",
+		"topics": ["hash table", "string"]
+	},
+	{
+		"text": "Maximum Product Subarray",
+		"number": 152,
+		"url": "https://leetcode.com/problems/maximum-product-subarray/",
+		"difficulty": "medium",
+		"topics": ["array", "dynamic programming"]
+	},
+	{
+		"text": "Design Add and Search Words Data Structure",
+		"number": 211,
+		"url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+		"difficulty": "medium",
+		"topics": ["design", "trie"]
+	},
+	{
+		"text": "Pacific Atlantic Water Flow",
+		"number": 417,
+		"url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search"]
+	},
+	{
+		"text": "Remove Nth Node From End of List",
+		"number": 19,
+		"url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+		"difficulty": "medium",
+		"topics": ["linked list", "two pointers"]
+	},
+	{
+		"text": "Find the Duplicate Number",
+		"number": 287,
+		"url": "https://leetcode.com/problems/find-the-duplicate-number/",
+		"difficulty": "medium",
+		"topics": ["array", "two pointers", "binary search"]
+	},
+	{
+		"text": "Top K Frequent Words",
+		"number": 692,
+		"url": "https://leetcode.com/problems/top-k-frequent-words/",
+		"difficulty": "medium",
+		"topics": ["hash table", "heap", "trie"]
+	},
+	{
+		"text": "Longest Increasing Subsequence",
+		"number": 300,
+		"url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+		"difficulty": "medium",
+		"topics": ["array", "binary search", "dynamic programming"]
+	},
+	{
+		"text": "Course Schedule II",
+		"number": 210,
+		"url": "https://leetcode.com/problems/course-schedule-ii/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search", "graph", "topological sort"]
+	},
+	{
+		"text": "Swap Nodes in Pairs",
+		"number": 24,
+		"url": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+		"difficulty": "medium",
+		"topics": ["linked list"]
+	},
+	{
+		"text": "Path Sum II",
+		"number": 113,
+		"url": "https://leetcode.com/problems/path-sum-ii/",
+		"difficulty": "medium",
+		"topics": ["tree", "depth-first search"]
+	},
+	{
+		"text": "Longest Consecutive Sequence",
+		"number": 128,
+		"url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+		"difficulty": "hard",
+		"topics": ["array", "union find"]
+	},
+	{
+		"text": "Rotate Array",
+		"number": 189,
+		"url": "https://leetcode.com/problems/rotate-array/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Odd Even Linked List",
+		"number": 328,
+		"url": "https://leetcode.com/problems/odd-even-linked-list/",
+		"difficulty": "medium",
+		"topics": ["linked list"]
+	},
+	{
+		"text": "Decode String",
+		"number": 394,
+		"url": "https://leetcode.com/problems/decode-string/",
+		"difficulty": "medium",
+		"topics": ["stack", "depth-first search"]
+	},
+	{
+		"text": "Contiguous Array",
+		"number": 525,
+		"url": "https://leetcode.com/problems/contiguous-array/",
+		"difficulty": "medium",
+		"topics": ["array", "hash table"]
+	},
+	{
+		"text": "Maximum Width of Binary Tree",
+		"number": 662,
+		"url": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
+		"difficulty": "medium",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Find K Closest Elements",
+		"number": 658,
+		"url": "https://leetcode.com/problems/find-k-closest-elements/",
+		"difficulty": "medium",
+		"topics": ["array", "binary search"]
+	},
+	{
+		"text": "Longest Repeating Character Replacement",
+		"number": 424,
+		"url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+		"difficulty": "medium",
+		"topics": ["two pointers", "sliding window"]
 	}
 ]
