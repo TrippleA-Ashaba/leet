@@ -740,5 +740,54 @@
 		"url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
 		"difficulty": "medium",
 		"topics": ["two pointers", "sliding window"]
+	},
+	{
+		"text": "Jump Game",
+		"number": 55,
+		"url": "https://leetcode.com/problems/jump-game/",
+		"difficulty": "medium",
+		"topics": ["array", "greedy"]
+	},
+	{
+		"text": "Add Two Numbers",
+		"number": 2,
+		"url": "https://leetcode.com/problems/add-two-numbers/",
+		"difficulty": "medium",
+		"topics": ["array", "dynamic programming", "greedy"]
+	},
+	{
+		"text": "Generate Parenttheses",
+		"number": 22,
+		"url": "https://leetcode.com/problems/generate-parentheses/",
+		"difficulty": "medium",
+		"topics": ["string", "backtracking"]
+	},
+	{
+		"text": "Sort List",
+		"number": 148,
+		"url": "https://leetcode.com/problems/sort-list/",
+		"difficulty": "medium",
+		"topics": ["linked list", "sort"]
+	},
+	{
+		"text": "Subarray Sum Equals K",
+		"number": 560,
+		"url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+		"difficulty": "medium",
+		"topics": ["array", "hash table"]
+	},
+	{
+		"text": "Asteroid Collision",
+		"number": 735,
+		"url": "https://leetcode.com/problems/asteroid-collision/",
+		"difficulty": "medium",
+		"topics": ["stack"]
+	},
+	{
+		"text": "Random Pick with Weight",
+		"number": 528,
+		"url": "https://leetcode.com/problems/random-pick-with-weight/",
+		"difficulty": "medium",
+		"topics": ["binary search", "random"]
 	}
 ]
