@@ -789,5 +789,320 @@
 		"url": "https://leetcode.com/problems/random-pick-with-weight/",
 		"difficulty": "medium",
 		"topics": ["binary search", "random"]
+	},
+	{
+		"text": "Kth Largest Element in an Array",
+		"number": 215,
+		"url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+		"difficulty": "medium",
+		"topics": ["divide and conquer", "heap"]
+	},
+	{
+		"text": "Maximal Square",
+		"number": 221,
+		"url": "https://leetcode.com/problems/maximal-square/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "Rotate Image",
+		"number": 48,
+		"url": "https://leetcode.com/problems/rotate-image/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Binary Tree Zigzag Level Order Traversal",
+		"number": 103,
+		"url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+		"difficulty": "medium",
+		"topics": ["tree", "breadth-first search"]
+	},
+	{
+		"text": "Design Hit Counter",
+		"number": 362,
+		"url": "https://leetcode.com/problems/design-hit-counter/",
+		"difficulty": "medium",
+		"topics": ["design"]
+	},
+	{
+		"text": "Path Sum III",
+		"number": 437,
+		"url": "https://leetcode.com/problems/path-sum-iii/",
+		"difficulty": "medium",
+		"topics": ["tree"]
+	},
+	{
+		"text": "Pow(x, n)",
+		"number": 50,
+		"url": "https://leetcode.com/problems/powx-n/",
+		"difficulty": "medium",
+		"topics": ["math", "binary search"]
+	},
+	{
+		"text": "Search a 2D Matrix",
+		"number": 74,
+		"url": "https://leetcode.com/problems/search-a-2d-matrix/",
+		"difficulty": "medium",
+		"topics": ["array", "binary search"]
+	},
+	{
+		"text": "Largest Number",
+		"number": 179,
+		"url": "https://leetcode.com/problems/largest-number/",
+		"difficulty": "medium",
+		"topics": ["sort"]
+	},
+	{
+		"text": "Decode Ways",
+		"number": 91,
+		"url": "https://leetcode.com/problems/decode-ways/",
+		"difficulty": "medium",
+		"topics": ["string", "dynamic programming"]
+	},
+	{
+		"text": "Reverse Integer",
+		"number": 7,
+		"url": "https://leetcode.com/problems/reverse-integer/",
+		"difficulty": "easy",
+		"topics": ["math"]
+	},
+	{
+		"text": "Set Matrix Zeroes",
+		"number": 73,
+		"url": "https://leetcode.com/problems/set-matrix-zeroes/",
+		"difficulty": "medium",
+		"topics": ["array"]
+	},
+	{
+		"text": "Reorder List",
+		"number": 143,
+		"url": "https://leetcode.com/problems/reorder-list/",
+		"difficulty": "medium",
+		"topics": ["linked list"]
+	},
+	{
+		"text": "Cheapest Flights Within K Stops",
+		"number": 787,
+		"url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+		"difficulty": "medium",
+		"topics": ["depth-first search", "breadth-first search", "graph"]
+	},
+	{
+		"text": "All Nodes Distance K in Binary Tree",
+		"number": 863,
+		"url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+		"difficulty": "medium",
+		"topics": ["tree", "depth-first search", "breadth-first search"]
+	},
+	{
+		"text": "3Sum Closest",
+		"number": 16,
+		"url": "https://leetcode.com/problems/3sum-closest/",
+		"difficulty": "medium",
+		"topics": ["array", "two pointers"]
+	},
+	{
+		"text": "Rotate List",
+		"number": 61,
+		"url": "https://leetcode.com/problems/rotate-list/",
+		"difficulty": "medium",
+		"topics": ["linked list", "two pointers"]
+	},
+	{
+		"text": "Find Minimum in Rotated Sorted Array",
+		"number": 153,
+		"url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+		"difficulty": "medium",
+		"topics": ["array", "binary search"]
+	},
+	{
+		"text": "Basic Calculator II",
+		"number": 227,
+		"url": "https://leetcode.com/problems/basic-calculator-ii/",
+		"difficulty": "medium",
+		"topics": ["string", "stack"]
+	},
+	{
+		"text": "Combination Sum IV",
+		"number": 377,
+		"url": "https://leetcode.com/problems/combination-sum-iv/",
+		"difficulty": "medium",
+		"topics": ["dynamic programming"]
+	},
+	{
+		"text": "Insert Delete GetRandom O(1)",
+		"number": 380,
+		"url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+		"difficulty": "medium",
+		"topics": ["array", "hash table", "design"]
+	},
+	{
+		"text": "Non-overlapping Intervals",
+		"number": 435,
+		"url": "https://leetcode.com/problems/non-overlapping-intervals/",
+		"difficulty": "medium",
+		"topics": ["array", "greedy"]
+	},
+	{
+		"text": "Minimum Window Substring",
+		"number": 76,
+		"url": "https://leetcode.com/problems/minimum-window-substring/",
+		"difficulty": "hard",
+		"topics": ["hash table", "two pointers", "string"]
+	},
+	{
+		"text": "Serialize and Deserialize Binary Tree",
+		"number": 297,
+		"url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+		"difficulty": "hard",
+		"topics": ["tree", "design"]
+	},
+	{
+		"text": "Trapping Rain Water",
+		"number": 42,
+		"url": "https://leetcode.com/problems/trapping-rain-water/",
+		"difficulty": "hard",
+		"topics": ["array", "two pointers", "stack"]
+	},
+	{
+		"text": "Find Median from Data Stream",
+		"number": 295,
+		"url": "https://leetcode.com/problems/find-median-from-data-stream/",
+		"difficulty": "hard",
+		"topics": ["heap", "design"]
+	},
+	{
+		"text": "Word Ladder",
+		"number": 127,
+		"url": "https://leetcode.com/problems/word-ladder/",
+		"difficulty": "hard",
+		"topics": ["breadth-first search"]
+	},
+	{
+		"text": "Basic Calculator",
+		"number": 224,
+		"url": "https://leetcode.com/problems/basic-calculator/",
+		"difficulty": "hard",
+		"topics": ["math", "stack"]
+	},
+	{
+		"text": "Maximum Profit in Job Scheduling",
+		"number": 1235,
+		"url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+		"difficulty": "hard",
+		"topics": ["dynamic programming", "binary search"]
+	},
+	{
+		"text": "Merge k Sorted Lists",
+		"number": 23,
+		"url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+		"difficulty": "hard",
+		"topics": ["linked list", "divide and conquer", "heap"]
+	},
+	{
+		"text": "Largest Rectangle in Histogram",
+		"number": 84,
+		"url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+		"difficulty": "hard",
+		"topics": ["array", "stack"]
+	},
+	{
+		"text": "Binary Tree Maximum Path Sum",
+		"number": 124,
+		"url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+		"difficulty": "hard",
+		"topics": ["tree", "depth-first search"]
+	},
+	{
+		"text": "Maximum Frequency Stack",
+		"number": 895,
+		"url": "https://leetcode.com/problems/maximum-frequency-stack/",
+		"difficulty": "hard",
+		"topics": ["hash table", "stack", "design"]
+	},
+	{
+		"text": "Median of Two Sorted Arrays",
+		"number": 4,
+		"url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+		"difficulty": "hard",
+		"topics": ["array", "binary search", "divide and conquer"]
+	},
+	{
+		"text": "Longest Increasing Path in a Matrix",
+		"number": 329,
+		"url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+		"difficulty": "hard",
+		"topics": ["depth-first search", "topological sort", "memoization"]
+	},
+	{
+		"text": "Longest Valid Parentheses",
+		"number": 32,
+		"url": "https://leetcode.com/problems/longest-valid-parentheses/",
+		"difficulty": "hard",
+		"topics": ["string", "dynamic programming"]
+	},
+	{
+		"text": "Word Search II",
+		"number": 212,
+		"url": "https://leetcode.com/problems/word-search-ii/",
+		"difficulty": "hard",
+		"topics": ["array", "backtracking", "trie"]
+	},
+	{
+		"text": "Bus Routes",
+		"number": 815,
+		"url": "https://leetcode.com/problems/bus-routes/",
+		"difficulty": "hard",
+		"topics": ["breadth-first search"]
+	},
+	{
+		"text": "Sliding Window Maximum",
+		"number": 239,
+		"url": "https://leetcode.com/problems/sliding-window-maximum/",
+		"difficulty": "hard",
+		"topics": ["array", "queue"]
+	},
+	{
+		"text": "Palindrome Pairs",
+		"number": 336,
+		"url": "https://leetcode.com/problems/palindrome-pairs/",
+		"difficulty": "hard",
+		"topics": ["hash table", "string", "trie"]
+	},
+	{
+		"text": "Reverse Nodes in k-Group",
+		"number": 25,
+		"url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+		"difficulty": "hard",
+		"topics": ["linked list"]
+	},
+	{
+		"text": "Sudoku Solver",
+		"number": 37,
+		"url": "https://leetcode.com/problems/sudoku-solver/",
+		"difficulty": "hard",
+		"topics": ["hash table", "backtracking"]
+	},
+	{
+		"text": "First Missing Positive",
+		"number": 41,
+		"url": "https://leetcode.com/problems/first-missing-positive/",
+		"difficulty": "hard",
+		"topics": ["array"]
+	},
+	{
+		"text": "N-Queens",
+		"number": 51,
+		"url": "https://leetcode.com/problems/n-queens/",
+		"difficulty": "hard",
+		"topics": ["backtracking"]
+	},
+	{
+		"text": "Smallest Range Covering Elements from K Lists",
+		"number": 632,
+		"url": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+		"difficulty": "hard",
+		"topics": ["array", "hash table", "two pointers", "string", "binary search", "heap", "design"]
 	}
 ]
