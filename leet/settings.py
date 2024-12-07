@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "smartmin",
     "taggit",
+    "django_htmx",
     # Local apps
     "apps.users",
     "apps.main",
