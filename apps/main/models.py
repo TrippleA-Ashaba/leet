@@ -17,7 +17,7 @@ class Question(TimeStampedModel):
     class Meta:
         verbose_name = "question"
         verbose_name_plural = "questions"
-        unique_together = ("text", "author")
+        unique_together = ("text", "number")
         ordering = ("number", "difficulty")
 
     text = models.CharField(max_length=255)
@@ -37,17 +37,18 @@ class Question(TimeStampedModel):
     last_practiced = models.DateTimeField(null=True, blank=True)
 
     @classmethod
-    def get_practice_questions(cls, question_count=5):
+    def get_practice_questions(self, queryset=None, question_count=5):
         one_week_ago = timezone.now() - relativedelta(weeks=1)
-        questions = (
-            Question.objects.filter(
-                Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
-            )
-            .order_by("last_practiced", "practice_count")
-            .prefetch_related("topics")
-        )
+        filter_set = Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
 
-        return questions[:question_count]
+        if queryset is None:
+            queryset = Question.objects.all()
+
+        return (
+            queryset.filter(filter_set)
+            .order_by("last_practiced", "practice_count")
+            .prefetch_related("topics")[:question_count]
+        )
 
     def save(self, *args, **kwargs):
         self.text = self.text.lower()

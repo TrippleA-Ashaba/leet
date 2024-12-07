@@ -9,10 +9,8 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["questions"] = self.model.objects.prefetch_related("topics").all()
-        context["practice_questions"] = self.get_practice_questions()
+        questions = self.model.objects.prefetch_related("topics").all()
+        context["questions"] = questions
+        context["practice_questions"] = self.model.get_practice_questions()
+        context["question_count"] = questions.count()
         return context
-
-    def get_practice_questions(self):
-        questions = self.model.get_practice_questions()
-        return questions
