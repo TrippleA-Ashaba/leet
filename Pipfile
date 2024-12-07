@@ -24,6 +24,7 @@ django-dynamic-fixture = "*"
 time-machine = "*"
 python-dateutil = "*"
 whitenoise = "*"
+django-htmx = "*"
 
 [dev-packages]
 ruff = "*"
