@@ -18,7 +18,7 @@ class Question(TimeStampedModel):
         verbose_name = "question"
         verbose_name_plural = "questions"
         unique_together = ("text", "number")
-        ordering = ("number", "difficulty")
+        ordering = ("created", "id")
 
     text = models.CharField(max_length=255)
     difficulty = models.CharField(
@@ -35,6 +35,7 @@ class Question(TimeStampedModel):
     topics = TaggableManager()
     practice_count = models.PositiveIntegerField(default=0)
     last_practiced = models.DateTimeField(null=True, blank=True)
+    solved = models.BooleanField(default=False)
 
     @classmethod
     def get_practice_questions(self, queryset=None, question_count=5):
