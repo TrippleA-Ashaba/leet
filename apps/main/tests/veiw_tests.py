@@ -1,6 +1,7 @@
 from ddf import G
 from django.test import TestCase
 from django.urls import reverse
+from django.utils import timezone
 
 from apps.main.models import Question
 
@@ -25,6 +26,7 @@ class TestIndexView(TestCase):
         self.assertEqual(response.context["solved_count"], 1)
 
         q = response.context["questions"][1]
+        self.assertEqual(q, question)
         self.assertEqual(q.text, "two sum ii")
         self.assertEqual(q.number, 2)
         self.assertEqual(q.solved, False)
@@ -40,3 +42,16 @@ class TestMarkQuestionSolvedView(TestCase):
         self.assertEqual(response.status_code, 200)
         self.question.refresh_from_db()
         self.assertTrue(self.question.solved)
+
+
+class TestMarkQuestionPracticedView(TestCase):
+    def setUp(self):
+        self.question = G(Question, text="Two Sum", number=1, practice_count=0)
+
+    def test_get(self):
+        response = self.client.get(reverse("main:mark_practiced", kwargs={"id": self.question.id}))
+        self.assertEqual(response.status_code, 200)
+        self.question.refresh_from_db()
+        self.assertEqual(self.question.practice_count, 1)
+        self.assertEqual(self.question.solved, True)
+        self.assertEqual(self.question.last_practiced.date(), timezone.now().date())
