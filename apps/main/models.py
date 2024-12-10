@@ -40,7 +40,11 @@ class Question(TimeStampedModel):
     @classmethod
     def get_practice_questions(self, queryset=None, question_count=5):
         one_week_ago = timezone.now() - relativedelta(weeks=1)
-        filter_set = Q(last_practiced__lt=one_week_ago) | Q(last_practiced__isnull=True, modified__lt=one_week_ago)
+        filter_set = Q(last_practiced__lt=one_week_ago) | Q(
+            last_practiced__isnull=True,
+            modified__lt=one_week_ago,
+            solved=True,
+        )
 
         if queryset is None:
             queryset = Question.objects.all()
@@ -50,6 +54,20 @@ class Question(TimeStampedModel):
             .order_by("last_practiced", "practice_count")
             .prefetch_related("topics")[:question_count]
         )
+
+    def mark_solved(self):
+        if not self.solved:
+            self.solved = True
+        else:
+            self.solved = False
+        self.save()
+
+    def mark_practiced(self):
+        self.practice_count += 1
+        self.last_practiced = timezone.now()
+        if not self.solved:
+            self.solved = True
+        self.save()
 
     def save(self, *args, **kwargs):
         self.text = self.text.lower()

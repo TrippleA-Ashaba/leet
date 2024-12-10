@@ -1,7 +1,6 @@
-from django.shortcuts import redirect
-from django.utils import timezone
 from django.views.generic import TemplateView, View
-from django_htmx.http import HttpResponseClientRedirect
+from django_htmx.http import HttpResponseClientRefresh
+from loguru import logger
 
 from .models import Question
 
@@ -27,14 +26,11 @@ class MarkQuestionSolvedView(View):
         question_id = kwargs.get("id")
         try:
             question = self.model.objects.get(id=question_id)
-            if not question.solved:
-                question.solved = True
-            else:
-                question.solved = False
-            question.save()
+            question.mark_solved()
         except self.model.DoesNotExist:
-            return HttpResponseClientRedirect(redirect("main:index"))
-        return HttpResponseClientRedirect(redirect("main:index"))
+            logger.error(f"Question - {question_id} does not exist.")
+            return HttpResponseClientRefresh()
+        return HttpResponseClientRefresh()
 
 
 class MarkQuestionPracticedView(View):
@@ -44,11 +40,8 @@ class MarkQuestionPracticedView(View):
         question_id = kwargs.get("id")
         try:
             question = self.model.objects.get(id=question_id)
-            question.practice_count += 1
-            question.last_practiced = timezone.now()
-            if not question.solved:
-                question.solved = True
-            question.save()
+            question.mark_practiced()
         except self.model.DoesNotExist:
-            return HttpResponseClientRedirect(redirect("main:index"))
-        return HttpResponseClientRedirect(redirect("main:index"))
+            logger.error(f"Question - {question_id} does not exist.")
+            return HttpResponseClientRefresh()
+        return HttpResponseClientRefresh()
