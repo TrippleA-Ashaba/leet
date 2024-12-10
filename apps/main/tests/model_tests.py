@@ -58,6 +58,6 @@ class TestQuestionModel(TestCase):
             G(Question, last_practiced=one_weeks_ago)
 
         # Get 3 practice questions
-        practice_questions = Question.get_practice_questions(7)
+        practice_questions = Question.get_practice_questions(question_count=7)
 
         self.assertEqual(len(practice_questions), 7)
