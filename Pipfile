@@ -25,6 +25,7 @@ time-machine = "*"
 python-dateutil = "*"
 whitenoise = "*"
 django-htmx = "*"
+loguru = "*"
 
 [dev-packages]
 ruff = "*"
